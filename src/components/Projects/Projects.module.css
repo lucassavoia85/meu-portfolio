@@ -52,3 +52,13 @@
 .link:hover {
   text-decoration: underline;
 }
+
+.projectImage {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}

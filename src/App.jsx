@@ -1,5 +1,7 @@
 import './App.css'
-import Projects from './components/Projects/Projects.jsx'
+import Projects from "./components/Projects/Projects.jsx";
+import fotoPerfil from "./assets/foto de perfil.jpg";
+
 
 export default function App() {
   return (
@@ -20,8 +22,8 @@ export default function App() {
         {/* Seção Sobre Mim */}
         <section id="sobre" className="container about-section">
           <img 
-            src="https://via.placeholder.com/150" 
-            alt="Foto de Perfil" 
+            src={fotoPerfil}
+            alt="Foto de Perfil do Lucas" 
             className="profile-pic"
           />
           <h1>Olá, eu sou o Lucas!</h1>
@@ -30,6 +32,14 @@ export default function App() {
             Aqui você encontrará meus projetos desenvolvidos durante o curso, 
             incluindo aplicações web interativas e soluções criativas.
           </p>
+
+          <h1>Certificados</h1>
+          <h3>Certifcado Imersão da Alura</h3>
+          <img 
+            src="/certificados/CERTIFICADO-ALURA.jpg" 
+            alt="Certificado Imersão da Alura" 
+            className="certificate-img"
+          />
         </section>
 
         {/* Componente de Projetos */}
@@ -54,9 +64,9 @@ export default function App() {
           <h2>Contato</h2>
           <p>Gostou do meu trabalho? Entre em contato!</p>
           <div className="social-links">
-            <a href="#" className="btn">LinkedIn</a>
-            <a href="#" className="btn">GitHub</a>
-            <a href="mailto:email@exemplo.com" className="btn">Email</a>
+            <a href="https://www.linkedin.com/in/lucas-matheus-savoia-alves-a92a453aa" target="_blank" rel="noopener noreferrer" className="btn">LinkedIn</a>
+            <a href="https://github.com/lucassavoia85" target="_blank" rel="noopener noreferrer" className="btn">GitHub</a>
+            <a href="mailto:lucas.savoia85@gmail.com" className="btn">Email</a>
           </div>
         </section>
       </main>

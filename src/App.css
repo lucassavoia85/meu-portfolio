@@ -45,7 +45,7 @@ h2 {
   color: var(--primary-color);
 }
 
-/* Estilos para o Header (simplificado aqui para o exemplo) */
+/* Estilos para o Header */
 header {
   background: #fff;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -82,6 +82,13 @@ nav a:hover {
 .profile-pic {
   border-radius: 50%;
   margin-bottom: 1rem;
+}
+
+.certificate-img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 1rem;
+  border-radius: 8px;
 }
 
 .bio {

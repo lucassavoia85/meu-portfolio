@@ -1,6 +1,5 @@
 import styles from './Projects.module.css';
-import { projects } from '../../data/projects';
-
+import projects from "./projects.js";
 export default function Projects() {
   return (
     <section id="projetos" className="container">
@@ -8,6 +7,10 @@ export default function Projects() {
       <div className={styles.grid}>
         {projects.map((project) => (
           <article key={project.id} className={styles.card}>
+            {project.imagem && (
+              <img src={project.imagem} alt={`Preview do projeto ${project.title}`} className={styles.projectImage} />
+            )}
+
             <h3>{project.title}</h3>
             <p>{project.description}</p>
             
@@ -15,6 +18,7 @@ export default function Projects() {
               {project.tech.map((tech) => (
                 <span key={tech} className={styles.tag}>{tech}</span>
               ))}
+              
             </div>
 
             <div className={styles.links}>
